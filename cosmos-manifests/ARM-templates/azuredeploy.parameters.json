@@ -37,9 +37,7 @@
             {
               "path": ""
             }
-          ],
-        "options": {
-					"throughput": "[parameters('throughput')]"
+          ]
         },
         "defaultTtl": 1209600, 
         "uniqueKeyPolicy": {
@@ -50,7 +48,9 @@
 								]
 							}
 						]
-					}
+          },
+        "options": {
+          "throughput": "[parameters('throughput')]"
         }
       }
     }
