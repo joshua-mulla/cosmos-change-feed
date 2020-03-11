@@ -141,7 +141,9 @@
 					"defaultTtl": "[parameters('tasksContainer').defaultTtl]",
 					"uniqueKeyPolicy": "[parameters('tasksContainer').uniqueKeyPolicy]"
 				},
-				"throughput": "[parameters('tasksContainer').throughput]"
+				"options": {
+					"throughput": 400
+				}
 			}
 		}
 	]
