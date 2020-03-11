@@ -78,6 +78,9 @@
 			"metadata": {
 				"description": "The throughput for the container with dedicated throughput. Limited to minimal throughput for lab purposes."
 			}
+		},
+		"taskContainer": {
+			"type": "object"
 		}
 	},
 	"variables": {
