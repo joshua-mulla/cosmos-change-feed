@@ -43,9 +43,7 @@
         "uniqueKeyPolicy": {
 						"uniqueKeys": [
 							{
-								"paths": [
-									"" 
-								]
+								"paths": []
 							}
 						]
           },
