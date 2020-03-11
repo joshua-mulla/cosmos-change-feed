@@ -139,7 +139,6 @@
 					"partitionKey": "[parameters('tasksContainer').partitionKey]",
 					"indexingPolicy": "[parameters('tasksContainer').indexingPolicy]",
 					"defaultTtl": "[parameters('tasksContainer').defaultTtl]",
-					"uniqueKeyPolicy": "[parameters('tasksContainer').uniqueKeyPolicy]"
 				},
 				"options": {
 					"throughput": 400
