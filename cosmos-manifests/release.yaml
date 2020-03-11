@@ -1,0 +1,13 @@
+variables:
+  resourcePrefix: 'cosmos-lab'
+  location: 'West Us 2'
+
+steps:
+- task: AzureResourceGroupDeployment@2
+  displayName: 'Azure Deployment:Create Or Update Resource Group action on $(resourcePrefix)-rg'
+  inputs:
+    azureSubscription: 'Pay-As-You-Go (7dd4e028-2c57-4b8c-86fa-f14ea18180a5)'
+    resourceGroupName: '$(resourcePrefix)-rg'
+    location: '$(location)'
+    csmFile: '$(System.DefaultWorkingDirectory)/_joshua-mulla_cosmos-change-feed/101-cosmosdb-create/azuredeploy.json'
+    csmParametersFile: '$(System.DefaultWorkingDirectory)/_joshua-mulla_cosmos-change-feed/101-cosmosdb-create/azuredeploy.parameters.json'
