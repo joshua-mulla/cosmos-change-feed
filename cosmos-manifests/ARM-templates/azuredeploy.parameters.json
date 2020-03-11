@@ -33,11 +33,7 @@
               "path": "/*"
             }
           ],
-          "excludedPaths": [
-            {
-              "path": ""
-            }
-          ]
+          "excludedPaths": []
         },
         "defaultTtl": 1209600, 
         "uniqueKeyPolicy": {
